@@ -1,0 +1,188 @@
+<head>
+  <title>Instructions</title>
+</head>
+
+<body>
+  <div>Commands are separated by new lines. They are of the form "verb" "number" "noun"</div>
+  <div>
+    <div style="margin: 0 20; display: inline-block">
+      <h3>Verbs</h3>
+      <div>Commonly used verbs are</div>
+      <div>
+        <ul>
+          <li>gather</li>
+          <li>build</li>
+          <li>store</li>
+        </ul>
+      </div>
+    </div>
+    <div style="margin: 0 20; display: inline-block">
+      <h3>Numbers</h3>
+      <div>Any numeric will do</div>
+      <ul>
+        <li>10</li>
+        <li>8</li>
+        <li>24</li>
+      </ul>
+    </div>
+    <div style="margin: 0 20; display: inline-block">
+      <h3>Nouns</h3>
+      <div>Commonly used nouns are</div>
+      <div>
+        <ul>
+          <li>stone</li>
+          <li>wood</li>
+          <li>fish</li>
+        </ul>
+      </div>
+    </div>
+    <h2>Example: store 10 fish</h2>
+  </div>
+  <h2>Info</h2>
+  <div>
+    You have an inventory. It can hold 10 items. If you need more than 10 items, you will have to use a shed.
+    Some things are automated for convenience, such as storing resources during gathering, emptying the farm,
+    or eating when your hunger is below 50%. To end your current list of commands, type in STOP or stop and hit execute.
+  <h2>Index</h2>
+  <div>
+    <div style="margin: 0 20; display: inline-block; vertical-align: top">
+        <div class="index-item">
+          <div class="index-group">gather</div>
+          <div class="index-subitem">
+            <ul>
+              <li>stone</li>
+              <li>wood</li>
+              <li>seed</li>
+              <li>fish</li>
+            </ul>
+          </div>
+        </div>
+        <div class="index-item">
+        <div class="index-group">plant</div>
+          <div class="index-subitem">
+            <ul>
+              <li>seed</li>
+            </ul>
+          </div>
+        </div>
+        <div class="index-item">
+          <div class="index-group">build</div>
+          <div class="index-subitem">
+            <ul>
+              <li>shed</li>
+              <li>range</li>
+              <li>farm</li>
+              <li>mine</li>
+              <li>smithy</li>
+          </div>
+        </div>
+        <div class="index-item">
+          <div class="index-group">research</div>
+          <div class="index-subitem">
+            <ul>
+              <li>weapon</li>
+              <li>armor</li>
+              <li>technology</li>
+          </div>
+        </div>
+        <div class="index-item">
+          <div class="index-group">mine</div>
+          <div class="index-subitem">
+            <ul>
+              <li>stone</li>
+          </div>
+        </div>
+        <div class="index-item">
+          <div class="index-group">smith</div>
+          <div class="index-subitem">
+            <ul>
+              <li>copper</li>
+              <li>iron</li>
+              <li>steel</li>
+              <ul>
+                <li>weapon</li>
+                <li>armor</li>
+              </ul>
+          </div>
+        </div>
+        <div class="index-item">
+          <div class="index-group">store</div>
+        </div>
+        <div class="index-item">
+          <div class="index-group">retrieve</div>
+        </div>
+        <div class="index-item">
+          <div class="index-group">drop</div>
+        </div>
+      </ul>
+    </div>
+    <div>
+      <h3>Shed</h3>
+      Holds up to 100 resources.<br>
+      Costs 10 wood to build
+    </div>
+    <div>
+      <h3>Range</h3>
+      Cooks items.<br>
+      Costs 20 wood and 20 stone to build
+    </div>
+    <div>
+      <h3>Farm</h3>
+      Grows seeds into vegetables. Uses plant command to plant stored seeds<br>
+      Costs 15 seed and 15 wood to build.
+    </div>
+    <!--div>
+      <h3>Study</h3>
+      Researches new tiers of equipment and technology<br>
+      Costs 100 wood and 100 stone to build.
+    </div-->
+    <div>
+      <h3>Mine</h3>
+      Place to mine stone having a chance to contain metals<br>
+      Costs 10 wood and 100 stone to build.
+    </div>
+    <div>
+      <h3>Smithy</h3>
+      Creates weapons or armor. Command looks like `smith 1 copper weapon`<br>
+      Costs 10 iron and 100 stone to build.
+    </div>
+  </div>
+  <h2>Getting Started</h2>
+  <div>
+    gather 10 wood<br>
+    build 1 shed<br>
+    gather 20 stone<br>
+    gather 20 wood<br>
+    build 1 range<br>
+    gather 10 fish<br>
+    cook 10 fish<br>
+  </div>
+  <style>
+    body {
+      width: 700px
+    }
+
+    .index-item {
+      display: inline-block;
+      vertical-align: top;
+      margin-right: 12px;
+    }
+    .index-group {
+      text-decoration: underline;
+      font: 16px Arial
+    }
+    .index-subitem {
+      margin-left: 12px;
+    }
+    ul {
+      margin-block-start: 4px;
+      margin-inline-start: 0px;
+      padding-inline-start: 12px;
+    }
+    @media (max-width: 1024px) {
+    	body {
+        width: 98%
+      }
+    }
+  </style>
+</body>

@@ -1,0 +1,22 @@
+<head>
+	<title>Scripting Fortress</title>
+</head>
+
+<body height="window.height" width="window.width">
+	<script src="scripting-fortress.js"></script>
+	<div style="display: inline-block; vertical-align: top">
+		<div>
+			<div id="history" style="height: 115px; width: 280px; background-color: black; position: relative">
+				<span id="history-text" style="position: absolute; bottom: 0; color: white; height: 100%; width: 100%; overflow-y: auto; display: flex; flex-direction: column-reverse"></span>
+			</div>
+			<div style="padding-top: 12px">
+				<textarea id="input-box" style="height: 115px; width: 280px;"></textarea>
+			</div>
+		</div>
+		<div>
+			<button onclick="parseScript()" style="display: inline-block; margin-top: 12px; margin-left: 12px">Execute</button>
+			<a href="instructions.html" style="display: inline-block; margin-left: 108px">Game guide</a>
+		</div>
+	</div>
+	<canvas height="600px" width="600px" id="cv"></canvas>
+</body>
